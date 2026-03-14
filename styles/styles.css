@@ -1,0 +1,40 @@
+.site-header {
+  display: flex;
+  align-items: center;
+  padding: 29px 127.5px;
+}
+
+.site-header nav {
+  margin-left: auto;
+  margin-right: 32px;
+}
+
+.nav-menu {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  list-style: none;
+  gap: 70.5px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.header-button {
+  font-size: 18px;
+  font-weight: 400;
+  background-color: black;
+  color: white;
+  border: 0;
+  border-radius: 6px;
+  padding: 10px 23px;
+  cursor: pointer;
+}
+
+.logo img {
+  height: 54.98;
+  width: 243;
+  display: block;
+}
