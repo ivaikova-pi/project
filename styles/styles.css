@@ -11,10 +11,11 @@
 
 .nav-menu {
   display: flex;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto-Regular";
   font-size: 18px;
   list-style: none;
   gap: 70.5px;
+  line-height:43px;
 }
 
 .nav-menu a {
@@ -27,14 +28,33 @@
   font-weight: 400;
   background-color: black;
   color: white;
-  border: 0;
+  border: 0px;
   border-radius: 6px;
   padding: 10px 23px;
   cursor: pointer;
 }
 
 .logo img {
-  height: 54.98;
-  width: 243;
+  height: 54.98px;
+  width: 243px;
   display: block;
+}
+
+/* .header-banner {
+
+} */
+
+.main-title {
+  display: flex;
+  font-family: "Roboto-Black";
+  font-size: 72px;
+  padding: 168px 528px;
+}
+
+.inscription {
+  display: flex;
+  font-family: "Roboto-Regular";
+  font-size: 29px;
+  padding: 34px 528px;
+  opacity: 0.61; 
 }
