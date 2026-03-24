@@ -1,11 +1,15 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 .site-header {
   display: flex;
   align-items: center;
-  padding: 29px 127.5px;
+  margin-top: 29px;
+  margin-left: 147px;
+  margin-right: 108px;
 }
 
 .site-header nav {
@@ -17,7 +21,9 @@
 
 .nav-menu {
   display: flex;
-  font-family: "Roboto-Regular";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 18px;
   list-style: none;
   gap: 70.5px;
@@ -32,8 +38,10 @@
 }
 
 .header-button {
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 400;
+  font-style: normal;
   background-color: black;
   color: white;
   border: 0px;
@@ -49,21 +57,40 @@
   display: block;
 }
 
-/* .header-banner {
+.main-banner {
+  padding-top: 231px;
+  margin-left: 122px;
+}
 
-} */
-
-/* .main-title {
+.main-title1 {
   display: flex;
   font-family: "Roboto-Black";
   font-size: 72px;
-  padding: 168px 528px;
+  line-height: normal;
+}
+
+.main-title2 {
+  display: flex;
+  font-family: "Roboto-Black";
+  font-size: 72px;
+  line-height: normal;
 }
 
 .inscription {
   display: flex;
   font-family: "Roboto-Regular";
   font-size: 29px;
-  padding: 34px 528px;
   opacity: 0.61;
-} */
+  line-height: normal;
+  margin-top: 13px;
+}
+
+.background-mountain {
+  background-image: url("../images/mountain_landscape.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  height: 1440px;
+  width: 100%;
+  position: relative;
+}
