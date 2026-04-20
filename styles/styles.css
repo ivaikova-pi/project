@@ -4,12 +4,19 @@
   box-sizing: border-box;
 }
 
+.background-header-section1 {
+  background-image: url("../images/mountain_landscape.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .site-header {
   display: flex;
   align-items: center;
-  margin-top: 29px;
-  margin-left: 147px;
-  margin-right: 108px;
+  padding-top: 29px;
+  padding-left: 147px;
+  padding-right: 108px;
 }
 
 .site-header nav {
@@ -21,7 +28,7 @@
 
 .nav-menu {
   display: flex;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
@@ -38,7 +45,7 @@
 }
 
 .header-button {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 400;
   font-style: normal;
@@ -58,39 +65,177 @@
 }
 
 .main-banner {
-  padding-top: 231px;
-  margin-left: 122px;
+  padding-top: 147px;
+  padding-bottom: 342px;
+  padding-left: 122px;
 }
 
-.main-title1 {
+.headline {
   display: flex;
-  font-family: "Roboto-Black";
+  font-family: "Roboto", sans-serif;
   font-size: 72px;
-  line-height: normal;
-}
-
-.main-title2 {
-  display: flex;
-  font-family: "Roboto-Black";
-  font-size: 72px;
+  font-weight: 900;
+  font-style: normal;
   line-height: normal;
 }
 
 .inscription {
   display: flex;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto";
   font-size: 29px;
+  font-weight: 400;
+  font-style: normal;
   opacity: 0.61;
   line-height: normal;
-  margin-top: 13px;
+  padding-top: 13px;
+  padding-bottom: 34px;
 }
 
-.background-mountain {
-  background-image: url("../images/mountain_landscape.jpg");
+.main-banner a {
+  display: flex;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  color: black;
+  text-decoration: none;
+  border-bottom: 5px solid black;
+  padding-bottom: 8px;
+  width: 110px;
+}
+
+.background-section2 {
+  background-color: #ffd2bf;
+  background-image: url("../images/man-on-mountain.png");
   background-repeat: no-repeat;
-  background-position: center top;
-  background-size: contain;
-  height: 1440px;
-  width: 100%;
+  background-position: center 58px;
+  background-size: cover;
+}
+
+.main-banner2 {
+  padding-top: 96px;
+  padding-left: 119px;
+  padding-bottom: 321px;
+}
+
+.section-title {
+  display: flex;
   position: relative;
+  display: inline-block;
+  line-height: normal;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 51px;
+  font-weight: 700;
+  padding-bottom: 17px;
+}
+
+.section-title::after {
+  background-color: black;
+  content: "";
+  position: absolute;
+  width: 65px;
+  height: 8px;
+  bottom: 0;
+  left: 0;
+}
+
+.data {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  line-height: normal;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  list-style: none;
+  gap: 20.5px 52px;
+  width: 465px;
+  padding: 49.5px 0 47px;
+  margin: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: rgba(0, 0, 0, 0.62);
+}
+
+.item::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.item-height::before {
+  background-image: url("../images/triangle.svg");
+}
+
+.item-coord::before {
+  background-image: url("../images/compass.svg");
+}
+
+.item-location::before {
+  background-image: url("../images/vector.svg");
+}
+
+.info {
+  display: flex;
+  line-height: normal;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 400;
+  width: 576px;
+  height: 207px;
+}
+
+.background-section3 {
+  background-color: black;
+  /* background-image: url("../images/background-lines.svg"), url("../images/grass.svg"); */
+
+}
+
+.services-header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: normal;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 51px;
+  font-weight: 700;
+  color: white;
+  padding-bottom: 21px;
+  padding-top: 69px;
+  position: relative;
+}
+
+.services-header::after {
+  background-color: #FFD2BF;
+  content: "";
+  position: absolute;
+  width: 65px;
+  height: 8px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section-description {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: normal;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 19px;
+  font-weight: 400;
+  color: white;
+  padding-top: 56px;
 }
