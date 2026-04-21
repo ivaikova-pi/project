@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+/* .entire-site {
+  max-width: 1440px;
+} */
+
 .background-header-section1 {
   background-image: url("../images/mountain_landscape.jpg");
   background-repeat: no-repeat;
@@ -198,7 +202,6 @@
 .background-section3 {
   background-color: black;
   /* background-image: url("../images/background-lines.svg"), url("../images/grass.svg"); */
-
 }
 
 .services-header {
@@ -238,4 +241,21 @@
   font-weight: 400;
   color: white;
   padding-top: 56px;
+  padding-bottom: 90px;
 }
+
+.services {
+  display: flex;
+  justify-content: center;
+  line-height: normal;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 22px;
+  font-weight: 700;
+  list-style: none;
+  gap: 185px;
+  color: #FFD2BF;
+  text-decoration: none;
+  align-items: center;
+}
+
