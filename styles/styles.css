@@ -7,7 +7,7 @@
 .entire-site {
   max-width: 1440px;
   margin: auto;
-  background-color: #1E1E1E;
+  background-color: #1e1e1e;
 }
 
 .background-header-section1 {
@@ -87,7 +87,7 @@
 
 .inscription {
   display: flex;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-size: 29px;
   font-weight: 400;
   font-style: normal;
@@ -99,7 +99,7 @@
 
 .main-banner a {
   display: flex;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 500;
   font-style: normal;
@@ -126,7 +126,6 @@
 }
 
 .section-title {
-  display: flex;
   position: relative;
   display: inline-block;
   line-height: normal;
@@ -198,12 +197,30 @@
   font-size: 18px;
   font-weight: 400;
   width: 576px;
-  height: 207px;
 }
 
 .background-section3 {
+  min-height: 1295px;
+  position: relative;
   background-color: black;
-  background-image: url("../images/background-lines.svg"), url("../images/grass.svg");
+  background-image: url("../images/background-lines.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+}
+
+.background-section3::after {
+  content: "";
+  position: absolute;
+  background-image: url("../images/mountain-view.png");
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 472px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
 }
 
 .services-header {
@@ -222,7 +239,7 @@
 }
 
 .services-header::after {
-  background-color: #FFD2BF;
+  background-color: #ffd2bf;
   content: "";
   position: absolute;
   width: 65px;
@@ -255,7 +272,7 @@
   font-weight: 700;
   list-style: none;
   gap: 185px;
-  color: #FFD2BF;
+  color: #ffd2bf;
   text-decoration: none;
   text-align: center;
   justify-content: center;
@@ -265,10 +282,232 @@
   padding-top: 59.42px;
 }
 
+.dotted-outline {
+  background-image: url("../images/dotted outline.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
 .services img {
-  max-width: 218.15;
-  max-height: 218.15;
+  max-width: 218.15px;
+  max-height: 218.15px;
   border-radius: 50%;
-  outline: 1px dashed #FFD2BF;
-  outline-offset: 10.42px;
+  padding: 10px;
+}
+
+.background-section4 {
+  min-height: 724px;
+  background-color: #130713;
+  background-image: url("../images/grass.svg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
+}
+
+.main-banner4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 117px;
+  align-items: start;
+}
+
+.column-name {
+  display: flex;
+  position: relative;
+  line-height: normal;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 44px;
+  font-weight: 700;
+  color: white;
+  padding-bottom: 23px;
+}
+
+.column-name::after {
+  background-color: #ffd2bf;
+  content: "";
+  position: absolute;
+  width: 65px;
+  height: 8px;
+  bottom: 0;
+  left: 0;
+}
+
+.left-column {
+  padding-left: 128px;
+}
+
+.cards {
+  display: flex;
+  gap: 49px;
+  padding-top: 80px;
+  min-width: 615px;
+}
+
+.guide {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  row-gap: 0;
+  column-gap: 27px;
+  align-items: start;
+}
+
+.guide img {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  width: 69px;
+  height: 69px;
+  border-radius: 50%;
+}
+
+.guide h3 {
+  line-height: normal;
+  white-space: nowrap;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 22px;
+  font-weight: 500;
+  color: white;
+  padding-bottom: 8px;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.profession {
+  line-height: normal;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  opacity: 0.44;
+  padding-bottom: 46px;
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.description {
+  line-height: normal;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 17px;
+  font-weight: 400;
+  color: white;
+  grid-column: 1/-1;
+  grid-row: 3;
+}
+
+.right-column {
+  width: 452px;
+}
+
+.description-of-trails {
+  line-height: normal;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  padding-top: 80px;
+  padding-bottom: 48px;
+}
+
+.trails-content {
+  display: flex;
+  gap: 48px;
+}
+
+.trail-name {
+  line-height: normal;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  padding-bottom: 7px;
+}
+
+.trails p {
+  line-height: normal;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  opacity: 0.44;
+  padding-bottom: 7px;
+}
+
+.main-button {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  background-color: transparent;
+  color: white;
+  border: 2px solid #cc2d41;
+  border-radius: 47px;
+  padding: 10px 36px;
+  cursor: pointer;
+  line-height: normal;
+  justify-self: end;
+  height: 40px;
+}
+
+.site-footer {
+  display: flex;
+  align-items: center;
+  padding-top: 29px;
+  padding-left: 147px;
+  padding-right: 108px;
+  padding-bottom: 40px;
+  background-color: #530030;
+}
+
+.site-footer nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 32px;
+}
+
+.footer-menu {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  list-style: none;
+  gap: 70.5px;
+  line-height: normal;
+}
+
+.footer-menu a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ffd2bf;
+}
+
+.footer-button {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  background-color: transparent;
+  color: #ffd2bf;
+  border: 0px;
+  border-radius: 6px;
+  padding: 10px 23px;
+  cursor: pointer;
+  line-height: normal;
+}
+
+.logo-footer img {
+  height: 54.98px;
+  width: 243px;
+  display: block;
 }

@@ -1,90 +1,153 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/fonts.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="styles/styles.css" />
-  <link rel="stylesheet" href="styles/fonts.css" />
-</head>
-
-<body class="entire-site">
-  <main>
-    <div class="background-header-section1">
-      <header class="site-header">
-        <a class="logo">
-          <img src="images/logotip-cap.svg" alt="Логотип" />
-        </a>
-        <nav>
-          <ul class="nav-menu">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">SERVICES</a></li>
-          </ul>
-        </nav>
-        <button class="header-button">BOOK NOW</button>
-      </header>
-      <section>
-        <div class="main-banner">
+  <body class="entire-site">
+    <main>
+      <div class="background-header-section1">
+        <header class="site-header">
+          <img
+            src="images/logotip-cap.svg"
+            class="logo"
+            alt="High Peaks Sports And Nature"
+          />
+          <nav>
+            <ul class="nav-menu">
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">SERVICES</a></li>
+            </ul>
+          </nav>
+          <button class="header-button">BOOK NOW</button>
+        </header>
+        <section class="main-banner">
           <h1 class="headline">EXPLORE<br />THE MOUNTAIN</h1>
           <p class="inscription">Live your deram and explore</p>
           <a href="#">Explore now</a>
-        </div>
+        </section>
+      </div>
+
+      <section class="background-section2 main-banner2">
+        <h2 class="section-title">Hiking the<br />Ancient Pine Forest</h2>
+        <ul class="data">
+          <li class="item item-height">3,420m(11,188ft)</li>
+          <li class="item item-coord">37°23'8.42''N 118°10 43.91''E</li>
+          <li class="item item-location">Inyo National Forest</li>
+        </ul>
+        <p class="info">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam turpis
+          odio integer vitae porta mattis. Vel, blandit enim diam est. Aliquam,
+          lobortis dui neque nisl quis pellentesque porttitor. A nulla eget sed
+          pellentesque nisl semper elit enim. Felis at tincidunt consequat
+          mattis egestas egestas sapien sed. Sollicitudin sed habitasse amet ac
+          libero nibh et viverra. Purus feugiat ac sit venenatis, faucibus
+          fringilla sed netus sit. dignissim habitasse lectus sit consectetur.
+          Parturient varius curabitur aliquam nisl malesuada sit non.
+        </p>
       </section>
-    </div>
-    <div class="background-section2">
-      <section>
-        <div class="main-banner2">
-          <h1 class="section-title">Hiking the<br />Ancient Pine Forest</h1>
-          <ul class="data">
-            <li class="item item-height">3,420m(11,188ft)</li>
-            <li class="item item-coord">37°23'8.42''N 118°10 43.91''E</li>
-            <li class="item item-location">Inyo National Forest</li>
-          </ul>
-          <p class="info">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-            turpis odio integer vitae porta mattis. Vel, blandit enim diam
-            est. Aliquam, lobortis dui neque nisl quis pellentesque porttitor.
-            A nulla eget sed pellentesque nisl semper elit enim. Felis at
-            tincidunt consequat mattis egestas egestas sapien sed.
-            Sollicitudin sed habitasse amet ac libero nibh et viverra. Purus
-            feugiat ac sit venenatis, faucibus fringilla sed netus sit.
-            dignissim habitasse lectus sit consectetur. Parturient varius
-            curabitur aliquam nisl malesuada sit non.
-          </p>
-        </div>
-      </section>
-    </div>
-    <div class="background-section3">
-      <section>
-        <div class="main-banner3">
-          <h1 class="services-header">Our Services</h1>
-          <p class="section-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus
-            tincidunt <br />
-            donec commodo scelerisque quis leo, egestas amet.
-          </p>
-          <div class="services">
-            <div>
-              <img src="images/person-climbing-mountain.jpg" alt="Услуга">
-              <p class="photo-trekking">Trekking/Mountaineering</p>
-            </div>
-            <div>
-              <img src="images/hiking-couple.jpg" alt="Услуга">
-              <p class="photo-tour">Family/Group Tour</p>
-            </div>
-            <div>
-              <img src="images/motorcycle-in-mountains.jpg" alt="Услуга">
-              <p class="photo-rafting">Mountain Biking/Rafting</p>
-            </div>
+
+      <section class="background-section3 main-banner3">
+        <h2 class="services-header">Our Services</h2>
+        <p class="section-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus
+          tincidunt <br />
+          donec commodo scelerisque quis leo, egestas amet.
+        </p>
+        <div class="services">
+          <div>
+            <img
+              src="images/person-climbing-mountain.jpg"
+              class="dotted-outline"
+              alt="Человек с лыжами за спиной поднимается по заснеженному горному склону"
+            />
+            <p>Trekking/Mountaineering</p>
+          </div>
+          <div>
+            <img
+              src="images/hiking-couple.jpg"
+              class="dotted-outline"
+              alt="Пара челочек - мужчина и женщина, поднимаются в горы"
+            />
+            <p>Family/Group Tour</p>
+          </div>
+          <div>
+            <img
+              src="images/motorcycle-in-mountains.jpg"
+              class="dotted-outline"
+              alt="Мотоцикл на фоне гор"
+            />
+            <p>Mountain Biking/Rafting</p>
           </div>
         </div>
       </section>
-    </div>
-    <section></section>
-  </main>
-  <footer></footer>
-</body>
 
+      <section class="background-section4 main-banner4">
+        <div class="left-column">
+          <h2 class="column-name">Guide</h2>
+          <div class="cards">
+            <div class="guide">
+              <img src="images/man.jpg" alt="Мужчина в очках и красной шапке" />
+              <h3>Jhone Towner</h3>
+              <p class="profession">Photographer</p>
+              <p class="description">
+                One of my favourite place to take picture
+              </p>
+            </div>
+            <div class="guide">
+              <img
+                src="images/woman.jpg"
+                alt="Девушка с распущенными волосами"
+              />
+              <h3>Lina Darja</h3>
+              <p class="profession">Guide</p>
+              <p class="description">The best place to hike during summer</p>
+            </div>
+          </div>
+        </div>
+        <div class="right-column">
+          <h2 class="column-name">Trails</h2>
+          <p class="description-of-trails">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam lectus
+            velit eget arcu. Elementum erat aliquam duis semper nulla nisl
+            porttitor at.
+          </p>
+          <div class="trails-content">
+            <div class="trails">
+              <h3 class="trail-name">Schulman Grove</h3>
+              <p>Distance : 13 km</p>
+              <p>Time : 5h</p>
+            </div>
+            <div class="trails">
+              <h3 class="trail-name">Patriarch Grove</h3>
+              <p>Distance : 9 km</p>
+              <p>Time : 3.7h</p>
+            </div>
+          </div>
+        </div>
+        <button class="main-button">Book Now</button>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <a class="logo-footer">
+        <img
+          src="images/logotip-basement.svg"
+          alt="High Peaks Sports And Nature"
+        />
+      </a>
+      <nav>
+        <ul class="footer-menu">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">SERVICES</a></li>
+        </ul>
+      </nav>
+      <button class="footer-button">BOOK NOW</button>
+    </footer>
+  </body>
 </html>
