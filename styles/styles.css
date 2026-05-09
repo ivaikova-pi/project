@@ -15,10 +15,10 @@ html {
 }
 
 body {
-  overflow-x: auto;
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
-  min-width: 1440px;
+  /* min-width: 1440px; */
 }
 
 .background-header-section1 {
@@ -538,54 +538,70 @@ body {
 
   /* Шапка сайта */
   .site-header {
-    flex-direction: column;
-    padding: 20px 15px;
-    gap: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 20px;
+    gap: 0 15px;
+    flex-wrap: wrap;
   }
 
   .site-header nav {
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
+    display: flex;
+    margin: 0;
+    width: auto;
+    flex-direction: column;
+    align-items: flex-end;
   }
 
   .nav-menu {
+    display: flex;
     flex-direction: column;
-    gap: 12px;
-    text-align: center;
+    align-items: flex-end;
+    text-align: right;
     font-size: 1rem;
+    margin-bottom: 5px;
+    gap: 5px;
+    padding-top: 10px;
   }
 
   .header-button {
-    width: 100%;
-    max-width: 200px;
-    margin: 0 auto;
+    display: block;
+    width: 130px;
+    height: 40px;
+    font-size: 1rem;
+    margin-left: auto;
   }
 
-  .logo img {
-    margin: 0 auto;
+  .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 175px;
+    padding-top: 10px;
   }
 
   /* Главный баннер */
   .main-banner {
-    padding: 60px 20px;
-    text-align: center;
+    padding: 80px 20px 200px;
+    text-align: left;
   }
 
   .headline {
     font-size: 36px;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .inscription {
     font-size: 18px;
-    justify-content: center;
+    justify-content: flex-start;
     padding-top: 10px;
     padding-bottom: 20px;
   }
 
   .main-banner a {
-    margin: 0 auto;
+    margin: 0;
   }
 
   /* Секция 2 */
@@ -808,5 +824,71 @@ body {
 
   .footer-menu {
     gap: 25px;
+  }
+}
+
+/* 3. ПК И НОУТБУКИ (от 768px до 1439px) */
+@media (min-width: 768px) and (max-width: 1439.98px) {
+  .entire-site {
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  body {
+    min-width: 0;
+  }
+
+  /* Шапка */
+  .site-header {
+    padding-left: 40px;
+    padding-right: 60px;
+  }
+
+  .nav-menu {
+    gap: 40px;
+  }
+
+  /* Баннер */
+  .main-banner {
+    padding-left: 60px;
+  }
+
+  .headline {
+    font-size: 60px;
+  }
+
+  /* Секция 2 */
+  .main-banner2 {
+    padding-left: 60px;
+  }
+
+  /* Секция 3 */
+  .services {
+    gap: 100px;
+  }
+
+  /* Секция 4 */
+  .main-banner4 {
+    column-gap: 60px;
+  }
+
+  .left-column {
+    padding-left: 60px;
+  }
+
+  .cards {
+    gap: 30px;
+    min-width: auto;
+  }
+
+  .right-column {
+    width: auto;
+    padding-right: 40px;
+  }
+
+  /* Футер */
+  .site-footer {
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
