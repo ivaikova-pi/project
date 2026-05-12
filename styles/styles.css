@@ -127,7 +127,7 @@ body {
   background-image: url("../images/man-on-mountain.png");
   background-repeat: no-repeat;
   background-position: center 58px;
-  background-size: cover;
+  background-size: contain;
 }
 
 .main-banner2 {
@@ -217,7 +217,7 @@ body {
   background-image: url("../images/background-lines.svg");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: contain;
+  background-size: cover;
 }
 
 .background-section3::after {
@@ -523,8 +523,6 @@ body {
   display: block;
 }
 
-/* МЕДИА-ЗАПРОСЫ */
-
 @media (max-width: 576px) {
   .entire-site {
     width: 100%;
@@ -543,36 +541,55 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     padding: 10px 20px;
-    gap: 0 15px;
     flex-wrap: wrap;
   }
 
   .site-header nav {
-    display: flex;
+    display: none;
+    /* display: flex;
     margin: 0;
     width: auto;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-end; */
   }
 
   .nav-menu {
-    display: flex;
+    display: none;
+    /* display: flex;
     flex-direction: column;
     align-items: flex-end;
     text-align: right;
-    font-size: 1rem;
+    font-size: 16px;
     margin-bottom: 5px;
     gap: 5px;
-    padding-top: 10px;
+    padding-top: 10px; */
   }
 
   .header-button {
-    display: block;
+    display: none;
+    /* display: block;
     width: 130px;
     height: 40px;
-    font-size: 1rem;
-    margin-left: auto;
+    font-size: 16px;
+    margin-left: auto; */
   }
+
+  .burger-menu {
+    display: flex;
+    width: 27px;
+    height: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-top: 18px;
+  }
+
+  .burger-lines {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    border-radius: 2px;
+}
 
   .logo {
     display: flex;
@@ -605,30 +622,46 @@ body {
   }
 
   /* Секция 2 */
+  .background-section2 {
+    background-position: bottom center;
+  }
+
   .main-banner2 {
-    padding: 40px 20px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    height: 650px;
   }
 
   .section-title {
-    font-size: 32px;
+    font-size: 30px;
+    order: 0;
   }
 
   .data {
     grid-template-columns: 1fr;
     width: 100%;
     gap: 12px;
-    padding: 30px 0;
+    padding: 20px 0;
+    order: 2;
   }
 
   .info {
+    order: 1;
     width: 100%;
     font-size: 16px;
+    padding-top: 30px;
   }
 
   /* Секция 3 */
+  .main-banner3 {
+    height: 1025px;
+  }
+
   .services-header {
-    font-size: 32px;
-    padding-top: 40px;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 17px;
   }
 
   .section-description {
@@ -638,12 +671,12 @@ body {
 
   .services {
     flex-direction: column;
-    gap: 40px;
+    gap: 35px;
     padding: 0 20px;
   }
 
   .services p {
-    padding-top: 20px;
+    padding-top: 12px;
   }
 
   .services img {
@@ -659,7 +692,8 @@ body {
   /* Секция 4 */
   .main-banner4 {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 0;
+    padding: 30px 20px;
   }
 
   .left-column {
@@ -674,26 +708,37 @@ body {
   }
 
   .column-name {
-    font-size: 32px;
+    font-size: 30px;
+    padding-bottom: 17px;
   }
 
   .cards {
     flex-direction: column;
     min-width: 0;
     gap: 30px;
-    padding-top: 40px;
+    padding-top: 30px;
+  }
+
+  .guide {
+    column-gap: 22px;
   }
 
   .guide h3 {
-    white-space: normal;
+    padding-top: 5px;
+    font-size: 20px;
+  }
+
+  .profession {
+    padding-bottom: 30px;
+    font-size: 18px;
   }
 
   .description {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .description-of-trails {
-    padding-top: 40px;
+    padding: 30px 0;
   }
 
   .trails-content {
@@ -704,191 +749,48 @@ body {
   .main-button {
     justify-self: start;
     margin-top: 20px;
+    margin-bottom: 60px;
+    margin-left: 15px;
   }
 
   /* подвал */
   .site-footer {
-    flex-direction: column;
-    padding: 30px 20px;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+    gap: 0 75px;
+    flex-wrap: wrap;
   }
 
   .site-footer nav {
-    margin: 20px 0;
+    display: flex;
+    margin: 0;
+    width: auto;
+    flex-direction: column;
+    align-items: flex-end;
   }
 
+
   .footer-menu {
+    display: flex;
     flex-direction: column;
-    gap: 12px;
+    align-items: flex-end;
+    text-align: right;
+    justify-content: space-between;
+    font-size: 16px;
+    margin-bottom: 5px;
+    gap: 5px;
+    padding-top: 10px;
+  }
+
+  .footer-button {
+    display: none;
   }
 
   .logo-footer img {
-    margin: 0 auto;
-  }
-}
 
-/*ПЛАНШЕТЫ */
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .entire-site {
-    width: 100%;
-  }
-
-  body {
-    min-width: 0;
-  }
-
-  /* Шапка */
-  .site-header {
-    padding: 20px 30px;
-    flex-wrap: wrap;
-  }
-
-  .nav-menu {
-    gap: 30px;
-  }
-
-  /* Баннер */
-  .main-banner {
-    padding: 80px 40px;
-  }
-
-  .headline {
-    font-size: 52px;
-  }
-
-  .inscription {
-    font-size: 22px;
-  }
-
-  /* Секция 2 */
-  .main-banner2 {
-    padding: 60px 40px;
-  }
-
-  .section-title {
-    font-size: 40px;
-  }
-
-  .data {
-    width: 100%;
-    gap: 15px 30px;
-  }
-
-  .info {
-    width: 100%;
-  }
-
-  /* Секция 3 */
-  .services {
-    gap: 60px;
-    flex-wrap: wrap;
-    padding: 0 20px;
-  }
-
-  .services-header {
-    font-size: 40px;
-  }
-
-  /* Секция 4 */
-  .main-banner4 {
-    grid-template-columns: 1fr;
-    gap: 50px;
-  }
-
-  .left-column {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
-  .right-column {
-    padding-left: 40px;
-    padding-right: 40px;
-    width: auto;
-  }
-
-  .cards {
-    flex-wrap: wrap;
-    min-width: 0;
-    gap: 30px;
-  }
-
-  .column-name {
-    font-size: 36px;
-  }
-
-  /* Футер */
-  .site-footer {
-    padding: 30px 40px;
-    flex-wrap: wrap;
-  }
-
-  .footer-menu {
-    gap: 25px;
-  }
-}
-
-/* 3. ПК И НОУТБУКИ (от 768px до 1439px) */
-@media (min-width: 768px) and (max-width: 1439.98px) {
-  .entire-site {
-    width: 100%;
-    max-width: 1200px;
-  }
-
-  body {
-    min-width: 0;
-  }
-
-  /* Шапка */
-  .site-header {
-    padding-left: 40px;
-    padding-right: 60px;
-  }
-
-  .nav-menu {
-    gap: 40px;
-  }
-
-  /* Баннер */
-  .main-banner {
-    padding-left: 60px;
-  }
-
-  .headline {
-    font-size: 60px;
-  }
-
-  /* Секция 2 */
-  .main-banner2 {
-    padding-left: 60px;
-  }
-
-  /* Секция 3 */
-  .services {
-    gap: 100px;
-  }
-
-  /* Секция 4 */
-  .main-banner4 {
-    column-gap: 60px;
-  }
-
-  .left-column {
-    padding-left: 60px;
-  }
-
-  .cards {
-    gap: 30px;
-    min-width: auto;
-  }
-
-  .right-column {
-    width: auto;
-    padding-right: 40px;
-  }
-
-  /* Футер */
-  .site-footer {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-top: 20px;
+    width: 175px;
   }
 }
