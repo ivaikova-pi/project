@@ -59,6 +59,25 @@ body {
   align-items: center;
   text-decoration: none;
   color: black;
+  transition:
+    color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.nav-menu a:hover {
+  color: #0c209e;
+  transform: translateY(-2px);
+}
+
+.nav-menu a:focus {
+  outline: 2px solid #0c209e;
+  outline-offset: 2px;
+  color: #0c209e;
+}
+
+.nav-menu a:active {
+  color: #1c327e;
+  transform: translateY(0);
 }
 
 .header-button {
@@ -73,6 +92,25 @@ body {
   padding: 0.625rem 1.4375rem;
   cursor: pointer;
   line-height: normal;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease,
+    box-shadow 0.3s ease;
+}
+
+.header-button:hover {
+  background-color: #333;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.header-button:focus {
+  background-color: #333;
+}
+
+.header-button:active {
+  background-color: #1c327e;
+  transform: scale(0.95);
 }
 
 .logo img {
@@ -120,6 +158,26 @@ body {
   border-bottom: 5px solid black;
   padding-bottom: 8px;
   width: 110px;
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.main-banner a:hover {
+  color: #0c209e;
+  border-color: #0c209e;
+}
+
+.main-banner a:focus {
+  outline: 2px solid #0c209e;
+  outline-offset: 2px;
+  color: #0c209e;
+  border-color: #0c209e;
+}
+
+.main-banner a:active {
+  color: #1c327e;
+  border-color: #1c327e;
 }
 
 .background-section2 {
@@ -466,6 +524,25 @@ body {
   line-height: normal;
   justify-self: end;
   height: 40px;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease,
+    box-shadow 0.3s ease;
+}
+
+.main-button:hover {
+  background-color: #190919;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.main-button:focus {
+  background-color: #190919;
+}
+
+.main-button:active {
+  background-color: #230c23;
+  transform: scale(0.95);
 }
 
 .site-footer {
@@ -501,6 +578,25 @@ body {
   align-items: center;
   text-decoration: none;
   color: #ffd2bf;
+  transition:
+    color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.footer-menu a:hover {
+  color: #190919;
+  transform: translateY(-2px);
+}
+
+.footer-menu a:focus {
+  outline: 2px solid #190919;
+  outline-offset: 2px;
+  color: #190919;
+}
+
+.footer-menu a:active {
+  color: #530030;
+  transform: translateY(0);
 }
 
 .footer-button {
@@ -515,6 +611,25 @@ body {
   padding: 0.625rem 1.4375rem;
   cursor: pointer;
   line-height: normal;
+  transition:
+    color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.footer-button:hover {
+  color: #190919;
+  transform: translateY(-2px);
+}
+
+.footer-button:focus {
+  outline: 2px solid #190919;
+  outline-offset: 2px;
+  color: #190919;
+}
+
+.footer-button:active {
+  color: #530030;
+  transform: translateY(0);
 }
 
 .logo-footer img {
@@ -589,7 +704,7 @@ body {
     height: 2px;
     background-color: black;
     border-radius: 2px;
-}
+  }
 
   .logo {
     display: flex;
@@ -771,7 +886,6 @@ body {
     align-items: flex-end;
   }
 
-
   .footer-menu {
     display: flex;
     flex-direction: column;
@@ -789,7 +903,6 @@ body {
   }
 
   .logo-footer img {
-
     padding-top: 20px;
     width: 175px;
   }
