@@ -638,6 +638,192 @@ body {
   display: block;
 }
 
+/* форма регистрации */
+.background-section5 {
+  background-image: url("../images/background-registration-form.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.registration-form {
+  display: flex;
+}
+
+.filling-out-the-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffd2bf;
+}
+
+.logo-registration {
+  display: flex;
+  margin-top: 36px;
+  margin-left: 64px;
+  width: 243px;
+  height: auto;
+}
+
+.birds-registration {
+  padding-top: 26px;
+  padding-left: 288px;
+  padding-bottom: 45px;
+  padding-right: 42px;
+}
+
+.registration-paragraph {
+  padding: 0 64px 40px;
+}
+
+.registration-paragraph h3 {
+  line-height: normal;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  color: #231f20;
+  padding-bottom: 8px;
+}
+
+.registration-paragraph p {
+  line-height: normal;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  color: #231f20;
+}
+
+.registration-paragraph a {
+  line-height: normal;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  color: #231f20;
+}
+
+.registration-paragraph p,
+.registration-paragraph a {
+  display: inline;
+}
+
+.button-registration {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-left: 64px;
+  margin-bottom: 16px;
+  margin-right: 64px;
+}
+
+.button-registration button {
+  display: flex;
+  height: 48px;
+  width: 352px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 8px;
+  background: white;
+}
+
+.button-registration button span {
+  width: 295px;
+  font-family: "Roboto", sans-serif;
+  line-height: normal;
+  font-size: 15px;
+  font-weight: 500;
+  font-style: normal;
+  color: #231f20;
+}
+
+.button-registration button img {
+  width: 24px;
+  height: 24px;
+  margin-right: 1px;
+}
+
+.divider {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  line-height: normal;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  color: #530030;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.divider::after,
+.divider::before {
+  content: "";
+  width: 156px;
+  opacity: 0.36;
+  border-top: 1px dashed #530030;
+}
+
+.registration-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 16px 64px;
+}
+
+.registration-field {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.registration-field p {
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  line-height: normal;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12px;
+  color: #530030;
+  background-color: #ffd2bf;
+  top: -7px;
+  left: 14px;
+  padding: 0 2px;
+}
+
+.form-input {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #530030;
+  border-radius: 8px;
+  padding: 16px 14px;
+  width: 352px;
+}
+
+.form-input input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: "Roboto", sans-serif;
+  line-height: normal;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.form-input input::placeholder {
+  color: #530030;
+  opacity: 0.45;
+}
+
+.form-input img {
+  width: 24px;
+  height: 24px;
+}
+
 @media (max-width: 576px) {
   .entire-site {
     width: 100%;
