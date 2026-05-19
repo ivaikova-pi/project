@@ -639,21 +639,24 @@ body {
 }
 
 /* форма регистрации */
-.background-section5 {
-  background-image: url("../images/background-registration-form.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+.registration-forms {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(58, 60, 65, 0.7);
 }
 
 .registration-form {
   display: flex;
-}
-
-.filling-out-the-form {
-  display: flex;
   flex-direction: column;
   background-color: #ffd2bf;
+  max-width: 480px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .logo-registration {
@@ -736,6 +739,7 @@ body {
   font-weight: 500;
   font-style: normal;
   color: #231f20;
+  cursor: pointer;
 }
 
 .button-registration button img {
@@ -822,6 +826,35 @@ body {
 .form-input img {
   width: 24px;
   height: 24px;
+}
+
+.password-recovery {
+  font-family: "Roboto", sans-serif;
+  line-height: normal;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: black;
+  text-align: right;
+  padding-bottom: 16px;
+}
+
+.button-login {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  line-height: normal;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15px;
+  color: white;
+  background-color: black;
+  width: 352px;
+  height: 48px;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  cursor: pointer;
 }
 
 @media (max-width: 576px) {
